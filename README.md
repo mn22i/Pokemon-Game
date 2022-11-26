@@ -17,7 +17,7 @@ The basic functionality of the Pokémon list will be implemented using a linked 
 •	PokemonGame.java: This is the class that will contain your main method.
  */
  
- public class Pokemon {
+     public class Pokemon {
     private int id;
     private String name;
     private String type;
@@ -70,8 +70,8 @@ The basic functionality of the Pokémon list will be implemented using a linked 
         return "ID: " + id + ", Name: " + name + ", Type: " + type + ", Attack: " + attack + ", Defense: " + defense + ", Total: " + total;
 
     }
-}
-public class PokemonBST {
+      }
+    public class PokemonBST {
     private PokemonBSTNode root;
 
     public void insert(Pokemon data) {
@@ -166,8 +166,8 @@ public class PokemonBST {
         postOrder(node.getRight());
         System.out.println(node.getPokemon());
     }
-}
-public class PokemonBSTNode {
+       }
+       public class PokemonBSTNode {
     private PokemonBSTNode left;
     private PokemonBSTNode right;
 
@@ -200,8 +200,8 @@ public class PokemonBSTNode {
         this.pokemon = pokemon;
     }
 
-}
-public class PokemonLL {
+    }
+       public class PokemonLL {
     private PokemonLLNode head;
 
     public boolean isEmpty() {
@@ -291,8 +291,8 @@ public class PokemonLL {
         return info;
     }
 
-}
-public class PokemonLLNode {
+     }
+     public class PokemonLLNode {
     private Pokemon pokemon;
     private PokemonLLNode next;
 
@@ -311,8 +311,8 @@ public class PokemonLLNode {
     public void setNext(PokemonLLNode next) {
         this.next = next;
     }
-}
-public class PokemonQueue {
+    }
+    public class PokemonQueue {
     private Pokemon[] queue;
     private int maxSize;
     private int front;
@@ -360,8 +360,8 @@ public class PokemonQueue {
         front = 0;
         numItems = 0;
     }
-}
-public class PokemonStack {
+    }
+    public class PokemonStack {
     private Pokemon[] stack;
     private int maxSize;
     private int top;
@@ -391,13 +391,18 @@ public class PokemonStack {
             throw new IllegalStateException("Stack is empty");
         return stack[top - 1];
     }
-}
+    }
 //Main
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.util.Scanner;
 
-public class PokemonGame {
+
+
+                      import java.io.File;
+                      import java.io.FileNotFoundException;
+             import java.util.Scanner;
+
+
+
+     public class PokemonGame {
     private static Scanner read;
     private static PokemonLL pokemonList;
     private static PokemonBST pokemonBST;
